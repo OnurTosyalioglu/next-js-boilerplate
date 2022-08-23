@@ -28,4 +28,4 @@ export async function getServerSideProps(context) {
 
 export default $2
 
-" > $1/$2.js
+" > $1
