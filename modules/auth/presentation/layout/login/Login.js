@@ -22,7 +22,10 @@ const Login = props => {
 
   useEffect(() => {})
 
-  return <Fragment></Fragment>
+	return <Fragment>
+			<div>
+			</div>
+		</Fragment>
 }
 
 Login.props = props

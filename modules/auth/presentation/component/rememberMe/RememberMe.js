@@ -7,12 +7,18 @@ import defaultProps from './props.default'
 import styles from './styles.module.css'
 
 const RememberMe = props => {
-  const { t } = useTranslation('')
+  const { t } = useTranslation('auth')
   const router = useRouter()
 
   useEffect(() => {})
 
-  return <Fragment></Fragment>
+	return <Fragment>
+			<div>
+				<button>
+					{t('rememberMe')}
+				</button>
+			</div>
+		</Fragment>
 }
 
 RememberMe.props = props

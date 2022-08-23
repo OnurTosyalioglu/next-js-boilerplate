@@ -22,7 +22,10 @@ const Signup = props => {
 
   useEffect(() => {})
 
-  return <Fragment></Fragment>
+	return <Fragment>
+			<div>
+			</div>
+		</Fragment>
 }
 
 Signup.props = props

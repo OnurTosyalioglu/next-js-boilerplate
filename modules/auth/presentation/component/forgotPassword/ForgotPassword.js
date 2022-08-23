@@ -7,12 +7,16 @@ import defaultProps from './props.default'
 import styles from './styles.module.css'
 
 const ForgotPassword = props => {
-  const { t } = useTranslation('')
+  const { t } = useTranslation('auth')
   const router = useRouter()
 
   useEffect(() => {})
 
-  return <Fragment></Fragment>
+	return <Fragment>
+			<div>
+				{t('forgotPassword')}
+			</div>
+		</Fragment>
 }
 
 ForgotPassword.props = props

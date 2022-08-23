@@ -7,12 +7,22 @@ import defaultProps from './props.default'
 import styles from './styles.module.css'
 
 const Divider = props => {
-  const { t } = useTranslation('')
+  const { t } = useTranslation('auth')
   const router = useRouter()
 
   useEffect(() => {})
 
-  return <Fragment></Fragment>
+	return <Fragment>
+			<div>
+				<div>
+				</div>
+				<div>
+					{t('or')}
+				</div>
+				<div>
+				</div>
+			</div>
+		</Fragment>
 }
 
 Divider.props = props
