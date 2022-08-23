@@ -2,11 +2,11 @@ import AuthContext from './auth.context'
 import useAuth from './auth'
 
 const AuthProvider = ({ children }) => {
-	const auth = useAuth()
+  const auth = useAuth()
 
-	return <AuthContext.Provider>
-		{children}
-		</AuthContext.Provider>
+  return (
+    <AuthContext.Provider>{children}</AuthContext.Provider>
+  )
 }
 
 export default AuthProvider

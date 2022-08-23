@@ -1,7 +1,6 @@
 mkdir -p $1
 
 echo "import {Fragment, useEffect, } from 'react'
-import {useTheme} from '@nextui-org/react'
 import {useTranslation} from 'next-i18next'
 import {useRouter} from 'next/router'
 
@@ -9,14 +8,7 @@ import props from './props'
 import defaultProps from './props.default'
 import styles from './styles.module.css'
 
-import {
-	Grid,
-	Text,
-	Container,
-} from '@nextui-org/react'
-
 const $2 = (props) => {  
-	const { theme } = useTheme()
 	const { t } = useTranslation('')
 	const router = useRouter()
 

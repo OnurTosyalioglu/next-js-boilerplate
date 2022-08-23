@@ -11,6 +11,10 @@ import {
   sendPasswordResetEmail,
   FacebookAuthProvider,
 } from 'firebase/auth'
+import config from '../../../../config/firebase'
+
+const app = initializeApp(config)
+const auth = getAuth(app)
 
 class Service {
   constructor(args = {}) {}
@@ -39,12 +43,28 @@ class Service {
     })
   }
 
-  resetPassword(email) {
-    return new Promise((resolve, reject) => {})
+  confirmPasswordReset({ oobCode, password }) {
+    return new Promise((resolve, reject) => {
+      try {
+        confirmPasswordReset(auth, oobCode, password)
+          .then(res => resolve(res))
+          .catch(err => reject(err))
+      } catch (e) {
+        reject(e)
+      }
+    })
   }
 
-  recoverAccount({ oobCode, password }) {
-    return new Promise((resolve, reject) => {})
+  sendPasswordResetEmail({ email }) {
+    return new Promise((resolve, reject) => {
+      try {
+        sendPasswordResetEmail(auth, email)
+          .then(res => resolve(res))
+          .catch(err => reject(err))
+      } catch (e) {
+        reject(e)
+      }
+    })
   }
 
   signInWithFacebook() {
@@ -86,6 +106,6 @@ class Service {
 
 export default {
   AuthService: new Service(),
-	auth,
-	onAuthStateChanged,
+  auth,
+  onAuthStateChanged,
 }

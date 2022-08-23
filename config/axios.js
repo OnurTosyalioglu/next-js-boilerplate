@@ -1,3 +1,3 @@
 export default {
-	baseURL: process.env.NEXT_PUBLIC_SERVICE,
+  baseURL: process.env.NEXT_PUBLIC_SERVICE,
 }
