@@ -32,3 +32,11 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+.*.swp
+*.*.swp
+.*.*.swp
+
+.env
+.env.development
+.env.production

@@ -1,0 +1,3 @@
+yarn add axios daisyui lodash firebase framer-motion next-i18next next-pwa next-seo next-themes nookies react-icons
+yarn add -D autoprefixer postcss prettier tailwindcss
+npx tailwindcss init

@@ -6,4 +6,5 @@ module.exports = {
     locales: ['en', 'tr'],
   },
 	localePath: path.resolve('./locale'),
+  ns: ['common', 'auth', 'index', 'main',], 
 };
